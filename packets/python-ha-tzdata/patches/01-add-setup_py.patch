@@ -1,0 +1,17 @@
+--- a/setup.py
++++ b/setup.py
+@@ -0,0 +1,14 @@
++from setuptools import setup, find_packages
++
++setup(
++    name="tzdata",
++    version="2021.1",
++    description="Provider of IANA time zone data",
++    url="https://github.com/python/tzdata",
++    author="Paul Ganssle",
++    author_email="paul@ganssle.io",
++    license="Apache-2.0",
++    packages=find_packages(include=["tzdata", "tzdata.*"]),
++    include_package_data=True,
++    zip_safe=False,
++)

@@ -1,0 +1,11 @@
+--- a/homeassistant/helpers/system_info.py
++++ b/homeassistant/helpers/system_info.py
+@@ -16,7 +16,7 @@
+ async def async_get_system_info(hass: HomeAssistant) -> dict[str, Any]:
+     """Return info about the system."""
+     info_object = {
+-        "installation_type": "Unknown",
++        "installation_type": "Home Assistant on OpenWrt (@lmahmutov)",
+         "version": current_version,
+         "dev": "dev" in current_version,
+         "hassio": hass.components.hassio.is_hassio(),

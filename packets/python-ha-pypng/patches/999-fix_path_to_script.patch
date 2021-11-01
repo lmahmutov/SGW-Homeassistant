@@ -1,0 +1,16 @@
+--- a/code/pngsuite.py
++++ b/code/pngsuite.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/opt/bin/python
+ 
+ # pngsuite.py
+ 
+--- a/code/png.py
++++ b/code/png.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/opt/bin/python
+ 
+ # png.py - PNG encoder/decoder in pure Python
+ #

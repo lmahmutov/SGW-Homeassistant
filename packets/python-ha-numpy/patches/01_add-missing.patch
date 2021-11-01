@@ -1,0 +1,15 @@
+--- /numpy/core/src/npymath/ieee754.c.src
++++ /numpy/core/src/npymath/ieee754.c.src
+@@ -29,6 +29,12 @@
+ }
+ #endif
+ 
++#define FE_INVALID    1
++#define __FE_DENORM   2
++#define FE_DIVBYZERO  4
++#define FE_OVERFLOW   8
++#define FE_UNDERFLOW  16
++#define FE_INEXACT    32
+ /*
+  The below code is provided for compilers which do not yet provide C11 compatibility (gcc 4.5 and older)
+  */

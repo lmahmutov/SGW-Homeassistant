@@ -1,0 +1,19 @@
+--- a/turbojpeg.py
++++ b/turbojpeg.py
+@@ -37,6 +37,7 @@ import os
+ DEFAULT_LIB_PATHS = {
+     'Darwin': ['/usr/local/opt/jpeg-turbo/lib/libturbojpeg.dylib'],
+     'Linux': [
++	'/opt/lib/libjpeg.so',
+         '/usr/lib/x86_64-linux-gnu/libturbojpeg.so.0',
+         '/opt/libjpeg-turbo/lib64/libturbojpeg.so'
+     ],
+@@ -486,7 +487,7 @@ class TurboJPEG(object):
+         if platform.system() == 'Linux' and 'LD_LIBRARY_PATH' in os.environ:
+             ld_library_path = os.environ['LD_LIBRARY_PATH']
+             for path in ld_library_path.split(':'):
+-                lib_path = os.path.join(path, 'libturbojpeg.so.0')
++                lib_path = os.path.join(path, 'libjpeg.so')
+                 if os.path.exists(lib_path):
+                     return lib_path
+         raise RuntimeError(
