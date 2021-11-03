@@ -4,6 +4,7 @@ Join Telegram group: [![@sgw_openwrt](https://img.shields.io/badge/%F0%9F%92%AC%
 ## Description
 
 OpenWrt Home Assistant Packages : for Head (Development branch)
+![HomeAssistant logo](https://raw.github.com/home-assistant/home-assistant/master/docs/screenshots.png)
 
 ## License
 
