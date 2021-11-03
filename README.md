@@ -1,4 +1,5 @@
-OpenWrt Home Assistant Packages (python3) Group on Telegram: [![@sgw_openwrt](https://img.shields.io/badge/%F0%9F%92%AC%20Telegram-%40SmartGateway-blue.svg)](https://t.me/sgw_openwrt)
+# OpenWrt Home Assistant Packages (python3) 
+Join Telegram group: [![@sgw_openwrt](https://img.shields.io/badge/%F0%9F%92%AC%20Telegram-%40SmartGateway-blue.svg)](https://t.me/sgw_openwrt)
 
 ## Description
 
