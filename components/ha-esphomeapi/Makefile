@@ -7,7 +7,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=python-ha-aioesphomeapi
+PKG_NAME:=ha-aioesphomeapi
 PKG_VERSION:=9.1.1
 PKG_RELEASE:=1
 
@@ -27,7 +27,8 @@ define Package/python3-ha-aioesphomeapi
   SUBMENU:=Components
   TITLE:=Python API for interacting with ESPHome devices.
   URL:=https://pypi.org/project/aioesphomeapi/
-  DEPENDS:=
+  DEPENDS:= \
+      +python3-light
 endef
 
 define Package/python3-ha-aioesphomeapi/description

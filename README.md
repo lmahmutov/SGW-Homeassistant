@@ -1,6 +1,5 @@
-OpenWrt Home Assistant Packages (python3) |Chat Status|
-
-|screenshot-states|
+# OpenWrt Home Assistant Packages (python3) 
+Join our supergroup on Telegram: [![@sgw_openwrt](https://img.shields.io/badge/%F0%9F%92%AC%20Telegram-%40SmartGateway-blue.svg)](https://t.me/sgw_openwrt)
 
 ## Description
 

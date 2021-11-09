@@ -18,6 +18,7 @@ define Package/ha-hacs
   TITLE:=HACS (metapackage)
   URL:=https://github.com/hacs/integration
   PKG_DEFAULT_DEPENDS:= \
+	+python3-light \
 	+python3-ha-aiofiles \
 	+python3-ha-aiogithubapi \
 	+python3-ha-aiohttp \

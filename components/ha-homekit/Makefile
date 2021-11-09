@@ -18,6 +18,7 @@ define Package/ha-homekit
   TITLE:=HomeKit (metapackage)
   URL:=https://www.home-assistant.io/integrations/homekit
   PKG_DEFAULT_DEPENDS:= \
+	+python3-light \
 	+python3-ha-aiohomekit \
 	+python3-ha-base36 \
 	+python3-ha-fnvhash \
