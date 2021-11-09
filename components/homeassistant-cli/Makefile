@@ -28,7 +28,7 @@ define Package/homeassistant-cli
   TITLE:=Home Assistant Command-line Interface
   URL:=https://pypi.org/project/homeassistant-cli/
   DEPENDS:= \
-	+python3-light \
+	+homeassistant \
 	+python3-ha-aiohttp \
 	+python3-ha-click-log \
 	+python3-ha-click \

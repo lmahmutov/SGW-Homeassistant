@@ -18,7 +18,7 @@ define Package/ha-zha
   TITLE:=ZHA (metapackage)
   URL:=https://www.home-assistant.io/integrations/zha/
   PKG_DEFAULT_DEPENDS:= \
-	+python3-light \
+	+homeassistant \
 	+python3-ha-bellows \
 	+python3-ha-zha-quirks \
 	+python3-ha-zigpy-cc \
