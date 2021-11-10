@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-zha-quirks
-PKG_VERSION:=0.0.60
+PKG_VERSION:=0.0.63
 PKG_RELEASE:=1
 
 PYPI_NAME:=zha-quirks
-PKG_HASH:=e2cc6ee997d72e68d32837aa40bb3a5b4029406c37b79256b4b51d59aa38a9b9
+PKG_HASH:=046ec9ef978e7d086a8d17562ba33a9178f55168195e0dbcc22ae57286bfeb2d
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT

@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-paho-mqtt
-PKG_VERSION:=1.5.1
+PKG_VERSION:=1.6.1
 PKG_RELEASE:=1
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
@@ -16,7 +16,7 @@ PKG_LICENSE:=EPL-1.0 Eclipse Distribution License v1.0
 PKG_LICENSE_FILES:=epl-v10 edl-v10
 
 PYPI_NAME:=paho-mqtt
-PKG_HASH:=9feb068e822be7b3a116324e01fb6028eb1d66412bf98595ae72698965cb1cae
+PKG_HASH:=2a8291c81623aec00372b5a85558a372c747cbca8e9934dfe218638b8eefc26f
 
 include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk

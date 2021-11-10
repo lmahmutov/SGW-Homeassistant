@@ -27,7 +27,7 @@ define Package/python3-ha-tzdata
   SUBMENU:=Python packages
   TITLE:=Provider of IANA time zone data.
   URL:=https://pypi.org/project/tzdata/
-  DEPENDS:= 
+  DEPENDS:= +python3-light
 endef
 
 define Package/python3-ha-tzdata/description
