@@ -27,7 +27,7 @@ define Package/python3-ha-vulture
   SUBMENU:=Python packages
   TITLE:=Find dead code.
   URL:=https://pypi.org/project/vulture/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-ha-vulture/description

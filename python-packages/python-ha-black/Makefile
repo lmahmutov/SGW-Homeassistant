@@ -27,7 +27,7 @@ define Package/python3-ha-black
   SUBMENU:=Python packages
   TITLE:=The uncompromising code formatter.
   URL:=https://pypi.org/project/black/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-ha-black/description

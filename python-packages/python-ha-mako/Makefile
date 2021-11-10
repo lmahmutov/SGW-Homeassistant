@@ -27,7 +27,7 @@ define Package/python3-ha-mako
   SUBMENU:=Python packages
   TITLE:=A super-fast templating language.
   URL:=https://pypi.org/project/mako/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-ha-mako/description

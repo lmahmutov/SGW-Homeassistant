@@ -27,7 +27,7 @@ define Package/python3-ha-crccheck
   SUBMENU:=Python packages
   TITLE:=Calculation library for CRCs and checksums.
   URL:=https://pypi.org/project/crccheck/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-ha-crccheck/description

@@ -27,7 +27,7 @@ define Package/python3-ha-pytest-socket
   SUBMENU:=Python packages
   TITLE:=Pytest Plugin to disable socket calls during tests.
   URL:=https://pypi.org/project/pytest-socket/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-ha-pytest-socket/description

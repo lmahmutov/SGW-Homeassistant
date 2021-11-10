@@ -27,7 +27,7 @@ define Package/python3-hacs-frontend
   SUBMENU:=Python packages
   TITLE:=The HACS frontend
   URL:=https://pypi.org/project/hacs-frontend/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-hacs-frontend/description

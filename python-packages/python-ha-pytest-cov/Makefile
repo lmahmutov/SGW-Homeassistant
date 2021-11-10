@@ -27,7 +27,7 @@ define Package/python3-ha-pytest-cov
   SUBMENU:=Python packages
   TITLE:=Pytest plugin for measuring coverage.
   URL:=https://pypi.org/project/pytest-cov/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-ha-pytest-cov/description

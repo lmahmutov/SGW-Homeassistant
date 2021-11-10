@@ -27,7 +27,7 @@ define Package/python3-ha-backoff
   SUBMENU:=Python packages
   TITLE:=Function decoration for backoff and retry.
   URL:=https://pypi.org/project/backoff/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-ha-backoff/description

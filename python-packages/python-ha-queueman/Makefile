@@ -27,7 +27,7 @@ define Package/python3-ha-queueman
   SUBMENU:=Python packages
   TITLE:=No project description provided.
   URL:=https://pypi.org/project/queueman/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-ha-queueman/description

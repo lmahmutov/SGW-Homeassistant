@@ -27,7 +27,7 @@ define Package/python3-ha-asynctest
   SUBMENU:=Python packages
   TITLE:=Enhance the standard unittest package.
   URL:=https://pypi.org/project/asynctest/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-ha-asynctest/description

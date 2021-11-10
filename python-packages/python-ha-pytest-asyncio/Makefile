@@ -27,7 +27,7 @@ define Package/python3-ha-pytest-asyncio
   SUBMENU:=Python packages
   TITLE:=Pytest support for asyncio.
   URL:=https://pypi.org/project/pytest-asyncio/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-ha-pytest-asyncio/description

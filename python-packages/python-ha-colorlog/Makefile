@@ -27,7 +27,7 @@ define Package/python3-ha-colorlog
   SUBMENU:=Python packages
   TITLE:=Add colours to the output of Python's logging.
   URL:=https://pypi.org/project/colorlog/
-  DEPENDS:= 
+  DEPENDS:= +python3-light 
 endef
 
 define Package/python3-ha-colorlog/description
