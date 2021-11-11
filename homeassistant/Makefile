@@ -89,6 +89,28 @@ define Package/homeassistant/description
   Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts.
 endef
 
+define Build/Prepare
+	$(call Build/Prepare/Default)
+	# Remove unwanted integrations
+	sed -i 's/    "/    # "/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "mqtt"/    "mqtt"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "zha"/    "zha"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "esphome"/    "esphome"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "met"/    "met"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "wled"/    "wled"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "homekit"/    "homekit"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	
+	# disabling all zeroconf services
+	sed -i 's/^    "_/    "_disabled_/' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
+	# re-enable required ones
+	sed -i 's/_disabled_esphomelib./_esphomelib./' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
+	sed -i 's/_disabled_homekit._tcp.local./_homekit._tcp.local./' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
+	sed -i 's/_disabled_ipps./_ipps./' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
+	sed -i 's/_disabled_ipp./_ipp./' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
+	sed -i 's/_disabled_printer./_printer./' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
+	sed -i 's/_disabled_miio./_miio./' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
+endef
+
 define Py3Package/homeassistant/install
 	$(INSTALL_DIR) $(1)/usr/bin 
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/hass $(1)/usr/bin
