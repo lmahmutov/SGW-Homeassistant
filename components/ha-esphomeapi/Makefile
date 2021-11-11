@@ -27,7 +27,9 @@ define Package/ha-aioesphomeapi
   SUBMENU:=Components
   TITLE:=API for interacting with ESPHome devices.
   URL:=https://pypi.org/project/aioesphomeapi/
-  DEPENDS:= +homeassistant
+  DEPENDS:= +homeassistant \
+	+python3-ha-protobuf \
+	+python3-ha-noiseprotocol
 endef
 
 define Package/ha-aioesphomeapi/description

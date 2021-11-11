@@ -96,7 +96,6 @@ define Build/Prepare
 	sed -i 's/    # "mqtt"/    "mqtt"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "zha"/    "zha"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "esphome"/    "esphome"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
-	sed -i 's/    # "met"/    "met"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "wled"/    "wled"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "homekit"/    "homekit"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	
