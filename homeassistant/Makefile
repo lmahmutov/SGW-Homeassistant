@@ -93,8 +93,7 @@ endef
 define Build/Prepare
 	$(call Build/Prepare/Default)
 	# serve static with gzipped files
-	sed -i 's/filepath = self._directory.joinpath(filename).resolve()/try:\n                filepath = self._directory.joinpath(Path(rel_url + ".gz")).resolve()\n                if not filepath.exists():\n                    raise FileNotFoundError()\n            except Exception as e:\n                filepath = self._directory.joinpath(filename).resolve()/' http/static.py
-
+	sed -i 's/filepath = self._directory.joinpath(filename).resolve()/try:\n                filepath = self._directory.joinpath(Path(rel_url + ".gz")).resolve()\n                if not filepath.exists():\n                    raise FileNotFoundError()\n            except Exception as e:\n                filepath = self._directory.joinpath(filename).resolve()/' $(PKG_BUILD_DIR)/homeassistant/components/http/static.py
 	# Remove cloud
 	sed -i 's/"cloud",//' $(PKG_BUILD_DIR)/homeassistant/components/default_config/manifest.json
 	# Remove unwanted integrations
