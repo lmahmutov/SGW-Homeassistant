@@ -68,7 +68,7 @@ define Package/homeassistant
 	+python3-ha-pyudev \
 	+python3-ha-sqlalchemy \
 	+python3-ha-zeroconf \
-	+scapy
+	+python3-ha-scapy
 # ext
   DEPENDS+= \
 	+python3-ha-cryptodome \
