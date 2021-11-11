@@ -59,7 +59,6 @@ define Package/homeassistant
 	+python3-ha-async-upnp-client \
 	+python3-ha-defusedxml \
 	+python3-ha-emoji \
-#	+python3-hass-nabucasa \
 	+python3-home-assistant-frontend \
 	+python3-ha-ifaddr \
 	+python3-ha-pillow \
