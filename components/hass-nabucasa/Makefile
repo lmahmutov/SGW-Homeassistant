@@ -29,7 +29,6 @@ define Package/hass-nabucasa
   URL:=https://pypi.org/project/hass-nabucasa/
   DEPENDS:= \
 	+homeassistant \
-	+libpcap \
 	+python3-ha-acme \
 	+python3-ha-aiohttp \
 	+python3-ha-atomicwrites \

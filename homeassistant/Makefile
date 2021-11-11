@@ -59,6 +59,7 @@ define Package/homeassistant
 	+python3-ha-async-upnp-client \
 	+python3-ha-defusedxml \
 	+python3-ha-emoji \
+	+hass-nabucasa \
 	+python3-home-assistant-frontend \
 	+python3-ha-ifaddr \
 	+python3-ha-pillow \
@@ -70,6 +71,7 @@ define Package/homeassistant
 	+python3-ha-scapy
 # ext
   DEPENDS+= \
+	+libpcap \
 	+python3-ha-cryptodome \
 	+python3-ha-gtts \
 	+python3-ha-h11 \
