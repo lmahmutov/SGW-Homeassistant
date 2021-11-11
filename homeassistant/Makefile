@@ -59,7 +59,7 @@ define Package/homeassistant
 	+python3-ha-async-upnp-client \
 	+python3-ha-defusedxml \
 	+python3-ha-emoji \
-	+python3-hass-nabucasa \
+#	+python3-hass-nabucasa \
 	+python3-home-assistant-frontend \
 	+python3-ha-ifaddr \
 	+python3-ha-pillow \
@@ -91,6 +91,8 @@ endef
 
 define Build/Prepare
 	$(call Build/Prepare/Default)
+	# Remove cloud
+	sed -i 's/"cloud",//' $(PKG_BUILD_DIR)/homeassistant/components/default_config/manifest.json
 	# Remove unwanted integrations
 	sed -i 's/    "/    # "/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "mqtt"/    "mqtt"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py

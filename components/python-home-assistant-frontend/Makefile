@@ -32,6 +32,26 @@ define Package/python3-home-assistant-frontend
 	+python3-ha-tzdata
 endef
 
+define Build/Prepare
+	$(call Build/Prepare/Default)
+	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/frontend_es5 -name '*.js' -delete
+	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/frontend_es5 -name '*.map'  -delete
+	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/frontend_es5 -name '*.txt' -delete
+	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/frontend_latest -name '*.js' -delete
+	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/frontend_latest -name '*.map' -delete
+	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/frontend_latest -name '*.txt' -delete
+
+	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/static/mdi -name '*.json' -maxdepth 1  -delete
+	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/static/polyfills -name '*.js' -maxdepth 1 -delete
+	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/static/polyfills -name '*.map' -maxdepth 1 -delete
+
+	# shopping list and calendar missing gzipped
+	gzip $(PKG_BUILD_DIR)/hass_frontend/static/translations/shopping_list/*
+
+	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/static/translations -name '*.json' -delete
+endef
+
+
 define Package/python3-home-assistant-frontend/description
  The Home Assistant frontend.
 endef
