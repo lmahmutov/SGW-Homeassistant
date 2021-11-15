@@ -34,6 +34,9 @@ define Package/hass-configurator
 endef
 
 define Py3Package/homeassistant/install
+	$(INSTALL_DIR) $(1)/usr/bin 
+	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/hass-configurator $(1)/usr/bin
+
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) ./files/hass-configurator $(1)/etc/init.d
 endef
