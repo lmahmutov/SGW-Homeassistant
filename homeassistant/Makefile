@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=homeassistant
-PKG_VERSION:=2021.11.2
+PKG_VERSION:=2021.11.3
 PKG_RELEASE:=1
 
 PYPI_NAME:=homeassistant
-PKG_HASH:=e162d76f76221ee0a0f0f672fb969be03c6f941677b47839e39faee0ea0f93ce
+PKG_HASH:=dee79e435095c2a584d606062a3aca3aa3ce82d62f67e7caf3dcb7e1da634c03
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0
