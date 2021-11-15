@@ -33,7 +33,11 @@ define Package/hass-configurator
 	+python3-ha-smmap
 endef
 
-define Py3Package/homeassistant/install
+define Package/hass-configurator/description
+ HASS-Configurator.
+endef
+
+define Py3Package/hass-configurator/install
 	$(INSTALL_DIR) $(1)/usr/bin 
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/hass-configurator $(1)/usr/bin
 
@@ -41,10 +45,6 @@ define Py3Package/homeassistant/install
 	$(INSTALL_BIN) ./files/hass-configurator $(1)/etc/init.d
 endef
 
-
-define Package/hass-configurator/description
- HASS-Configurator.
-endef
 
 $(eval $(call Py3Package,hass-configurator))
 $(eval $(call BuildPackage,hass-configurator))
