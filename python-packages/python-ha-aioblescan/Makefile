@@ -22,7 +22,7 @@ include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
 
-define Package/python3-ha-aioblescanjanus
+define Package/python3-ha-aioblescan
   CATEGORY:=Homeassistant
   SUBMENU:=Python packages
   TITLE:=Scanning Bluetooth for advertised
