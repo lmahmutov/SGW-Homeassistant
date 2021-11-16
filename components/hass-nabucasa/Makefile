@@ -28,7 +28,6 @@ define Package/hass-nabucasa
   TITLE:=Home Assistant cloud
   URL:=https://pypi.org/project/hass-nabucasa/
   DEPENDS:= \
-	+homeassistant \
 	+python3-ha-acme \
 	+python3-ha-aiohttp \
 	+python3-ha-atomicwrites \
