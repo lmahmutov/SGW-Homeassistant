@@ -18,6 +18,7 @@ define Package/ha-miio
   TITLE:=HA xiaomi-miio (metapackage)
   PKG_DEFAULT_DEPENDS:= \
 	+homeassistant \
+	+python3-ha-python-miio \
 	+python3-ha-appdirs \
 	+python3-ha-construct \
 	+python3-ha-croniter \

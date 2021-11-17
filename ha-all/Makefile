@@ -23,7 +23,8 @@ define Package/ha-all
 	+ha-wled \
 	+ha-zha \
 	+ha-ble-monitor \
-	+ha-miio
+	+ha-miio \
+	+ha-yeelight
 endef
 
 define Package/ha-all/description

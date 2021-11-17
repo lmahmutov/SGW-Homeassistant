@@ -28,7 +28,8 @@ define Package/ha-wled
   TITLE:=Python client for WLED.
   URL:=https://pypi.org/project/wled/
   DEPENDS:= +homeassistant \
-	+python3-ha-backoff
+	+python3-ha-backoff \
+	+python3-ha-packaging
 endef
 
 define Package/ha-wled/description
