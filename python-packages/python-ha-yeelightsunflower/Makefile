@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-yeelightsunflower
-PKG_VERSION:=0.7.8
+PKG_VERSION:=0.0.10
 PKG_RELEASE:=1
 
 PYPI_NAME:=yeelightsunflower
-PKG_HASH:=32139829f68ba5741c06b68254fca7990f42399cb0e8bc46d5942ccb3ab7201a
+PKG_HASH:=978465e964822baf3f5c1c029dda2736ede478f0d77d2b3fb885da0a4ac84fb8
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
