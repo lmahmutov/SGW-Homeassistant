@@ -7,12 +7,12 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=python-yeelightsunflower
-PKG_VERSION:=0.0.10
+PKG_NAME:=python-micloud
+PKG_VERSION:=0.4
 PKG_RELEASE:=1
 
-PYPI_NAME:=yeelightsunflower
-PKG_HASH:=978465e964822baf3f5c1c029dda2736ede478f0d77d2b3fb885da0a4ac84fb8
+PYPI_NAME:=micloud
+PKG_HASH:=a3966bc9fabfc739ca15e07dc0ad42ff4c473fe3969a34f3e6d282b541456fab
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
@@ -22,20 +22,18 @@ include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
 
-define Package/python3-ha-yeelightsunflower
+define Package/python3-ha-micloud
   CATEGORY:=Homeassistant
   SUBMENU:=Python packages
-  TITLE:=Yeelight Sunflower bulbs
-  URL:=https://pypi.org/project/yeelightsunflower/
+  TITLE:=Xiaomi cloud connect library
+  URL:=https://pypi.org/project/micloud/
   DEPENDS:=  \
 	+python3-light
 endef
 
-PYTHON3_PKG_SETUP_ARGS:=
-
-define Package/python3-ha-yeelightsunflower/description
- Python package for interacting with Yeelight Sunflower bulbs.
+define Package/python3-ha-micloud/description
+ Xiaomi cloud connect library.
 endef
 
-$(eval $(call Py3Package,python3-ha-yeelightsunflower))
-$(eval $(call BuildPackage,python3-ha-yeelightsunflower))
+$(eval $(call Py3Package,python3-ha-micloud))
+$(eval $(call BuildPackage,python3-ha-micloud))

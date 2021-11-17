@@ -19,7 +19,8 @@ define Package/ha-yeelight
   PKG_DEFAULT_DEPENDS:= \
 	+homeassistant \
 	+python3-ha-yeelight \
-	+python3-ha-yeelightsunflower
+	+python3-ha-yeelightsunflower \
+	+python3-ha-future
 endef
 
 define Package/ha-yeelight/description

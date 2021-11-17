@@ -23,7 +23,8 @@ define Package/ha-miio
 	+python3-ha-construct \
 	+python3-ha-croniter \
 	+python3-ha-natsort \
-	+python3-ha-tqdm
+	+python3-ha-tqdm \
+	+python3-ha-micloud
 endef
 
 define Package/ha-miio/description

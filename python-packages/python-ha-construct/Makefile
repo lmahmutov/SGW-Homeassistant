@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-construct
-PKG_VERSION:=2.10.67
+PKG_VERSION:=2.10.56
 PKG_RELEASE:=1
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
@@ -16,7 +16,7 @@ PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE.txt
 
 PYPI_NAME:=construct
-PKG_HASH:=730235fedf4f2fee5cfadda1d14b83ef1bf23790fb1cc579073e10f70a050883
+PKG_HASH:=97ba13edcd98546f10f7555af41c8ce7ae9d8221525ec4062c03f9adbf940661
 
 include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
