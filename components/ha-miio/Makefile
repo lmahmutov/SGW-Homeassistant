@@ -24,7 +24,9 @@ define Package/ha-miio
 	+python3-ha-croniter \
 	+python3-ha-natsort \
 	+python3-ha-tqdm \
-	+python3-ha-micloud
+	+python3-ha-micloud \
+	+python3-ha-pytz-deprecation-shim \
+	+python3-ha-tzlocal
 endef
 
 define Package/ha-miio/description
