@@ -22,9 +22,8 @@ define Package/ha-all
 	+hass-configurator \
 	+ha-wled \
 	+ha-zha \
-	+homeassistant-cli \
-	+python3-ha-python-miio \
-	+ha-ble-monitor
+	+ha-ble-monitor \
+	+ha-miio
 endef
 
 define Package/ha-all/description

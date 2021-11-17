@@ -27,7 +27,8 @@ define Package/python3-ha-requires
   SUBMENU:=Python packages
   TITLE:=Require and import dependencies at runtime.
   URL:=https://pypi.org/project/requires/
-  DEPENDS:= +python3-light
+  DEPENDS:= +python3-light \
+	+python3-ha-funkify
 endef
 
 define Package/python3-ha-requires/description

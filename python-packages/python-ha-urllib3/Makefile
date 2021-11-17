@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-urllib3
-PKG_VERSION:=1.26.2
+PKG_VERSION:=1.25.11
 PKG_RELEASE:=1
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
@@ -17,7 +17,7 @@ PKG_LICENSE_FILES:=LICENSE.txt
 PKG_CPE_ID:=cpe:/a:urllib3_project:urllib3
 
 PYPI_NAME:=urllib3
-PKG_HASH:=19188f96923873c92ccb987120ec4acaa12f0461fa9ce5d3d0772bc965a39e08
+PKG_HASH:=8d7eaa5a82a1cac232164990f04874c594c9453ec55eef02eab885aa02fc17a2
 
 include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk

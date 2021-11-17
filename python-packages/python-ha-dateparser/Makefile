@@ -27,7 +27,8 @@ define Package/python3-ha-dateparser
   SUBMENU:=Python packages
   TITLE:=Date parsing library.
   URL:=https://pypi.org/project/dateparser/
-  DEPENDS:= +python3-light 
+  DEPENDS:= +python3-light \
+	+python3-ha-tzlocal 
 endef
 
 define Package/python3-ha-dateparser/description

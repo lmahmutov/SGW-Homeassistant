@@ -27,7 +27,8 @@ define Package/python3-ha-httplib2
   SUBMENU:=Python packages
   TITLE:=Small, fast HTTP client library for Python.
   URL:=https://pypi.org/project/httplib2/
-  DEPENDS:=+python3-light
+  DEPENDS:=+python3-light \
+	+python3-ha-pyparsing
 endef
 
 define Package/python3-ha-httplib2/description

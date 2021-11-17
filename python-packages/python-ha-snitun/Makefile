@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-snitun
-PKG_VERSION:=0.24.0
+PKG_VERSION:=0.30.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=snitun
-PKG_HASH:=a2131aab4afb1a55c317989fba6b40efaeb324f1fbf8f8708c7ad7967a68f838
+PKG_HASH:=20a543852b233249e9a453e5a3164eeae50f438b3eb53753ce746ce42261a125
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=GPL-3.0-or-later
