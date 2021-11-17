@@ -1,0 +1,17 @@
+--- a/setup.py
++++ b/setup.py
+@@ -0,0 +1,14 @@
++from setuptools import setup, find_packages
++
++setup(
++    name="pytz-deprecation-shim",
++    version="0.1.0.post0",
++    description="Shims to make deprecation of pytz easier",
++    url="https://github.com/python/pytz-deprecation-shim",
++    author="Paul Ganssle",
++    author_email="paul@ganssle.io",
++    license="Apache-2.0",
++    packages=find_packages(include=["pytz-deprecation-shim", "pytz-deprecation-shim.*"]),
++    include_package_data=True,
++    zip_safe=False,
++)
