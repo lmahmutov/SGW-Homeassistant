@@ -39,5 +39,12 @@ A low-level interface to a growing number of Amazon Web Services.
 The botocore package is the foundation for the AWS CLI as well as boto3.
 endef
 
+define Build/Prepare
+	$(call Build/Prepare/Default)
+	# Remove data folder
+	cd $(PKG_BUILD_DIR) && rm -rf data && mkdir data
+endef
+
+
 $(eval $(call Py3Package,python3-ha-botocore))
 $(eval $(call BuildPackage,python3-ha-botocore))
