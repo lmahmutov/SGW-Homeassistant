@@ -24,7 +24,8 @@ define Package/ha-all
 	+ha-zha \
 	+ha-ble-monitor \
 	+ha-miio \
-	+ha-yeelight
+	+ha-yeelight \
+	+ha-yandexstation
 endef
 
 define Package/ha-all/description

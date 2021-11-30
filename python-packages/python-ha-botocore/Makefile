@@ -42,7 +42,7 @@ endef
 define Build/Prepare
 	$(call Build/Prepare/Default)
 	# Remove data folder
-	cd $(PKG_BUILD_DIR) && rm -rf data && mkdir data
+	cd $(PKG_BUILD_DIR)/botocore/ && rm -rf data && mkdir data
 endef
 
 
