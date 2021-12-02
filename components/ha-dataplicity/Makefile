@@ -22,7 +22,6 @@ define Package/ha-dataplicity
   PKG_DEFAULT_DEPENDS:= \
 	+homeassistant \
 	+python3-ha-dataplicity \
-	+python3-ha-enum34 \
 	+python3-ha-six \
 	+python3-ha-lomond
 endef
