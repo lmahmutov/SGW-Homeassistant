@@ -1,0 +1,33 @@
+--- a/homeassistant.egg-info/requires.txt
++++ b/homeassistant.egg-info/requires.txt
+@@ -11,7 +11,7 @@
+ ifaddr==0.1.7
+ jinja2==3.0.3
+ PyJWT==2.1.0
+-cryptography==35.0.0
++cryptography==3.4.8
+ pip<=21.2.3,>=8.0.3
+ python-slugify==4.0.1
+ pyyaml==6.0
+--- a/homeassistant/package_constraints.txt
++++ b/homeassistant/package_constraints.txt
+@@ -13,7 +13,7 @@
+ bcrypt==3.1.7
+ certifi>=2021.5.30
+ ciso8601==2.2.0
+-cryptography==35.0.0
++cryptography==3.4.8
+ emoji==1.5.0
+ hass-nabucasa==0.50.0
+ home-assistant-frontend==20211220.0
+--- a/setup.py
++++ b/setup.py
+@@ -47,7 +47,7 @@
+     "jinja2==3.0.3",
+     "PyJWT==2.1.0",
+     # PyJWT has loose dependency. We want the latest one.
+-    "cryptography==35.0.0",
++    "cryptography==3.4.8",
+     "pip>=8.0.3,<=21.2.3",
+     "python-slugify==4.0.1",
+     "pyyaml==6.0",
