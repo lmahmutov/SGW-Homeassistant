@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=aiohttp
-PKG_VERSION:=3.7.4.post0
+PKG_VERSION:=3.8.1
 PKG_RELEASE:=1
 
 PYPI_NAME:=$(PKG_NAME)
-PKG_HASH:=493d3299ebe5f5a7c66b9819eacdcfbbaaf1a8e84911ddffcdc48888497afecf
+PKG_HASH:=fc5471e1a54de15ef71c1bc6ebe80d4dc681ea600e68bfd1cbce40427f0b7578
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0
@@ -39,7 +39,8 @@ define Package/python3-ha-aiohttp
 	+python3-codecs \
 	+python3-cgi \
 	+python3-openssl \
-	+python3-ha-typing-extensions
+	+python3-ha-typing-extensions \
+	+python3-ha-aiosignal
 endef
 
 define Package/python3-ha-aiohttp/description

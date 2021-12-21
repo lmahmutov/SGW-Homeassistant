@@ -1,7 +1,7 @@
 --- a/setup.py
 +++ b/setup.py
-@@ -11,7 +11,7 @@ import sys
- from setuptools import find_packages, setup
+@@ -11,7 +11,7 @@
+ from setuptools import setup
  
  try:
 -    from setuptools_rust import RustExtension
@@ -9,12 +9,25 @@
  except ImportError:
      print(
          """
-@@ -45,7 +45,7 @@ setuptools_rust = "setuptools-rust>=0.11
- install_requirements = ["cffi>=1.12"]
- setup_requirements = install_requirements + [setuptools_rust]
- 
--if os.environ.get("CRYPTOGRAPHY_DONT_BUILD_RUST"):
-+if True:
-     rust_extensions = []
- else:
-     rust_extensions = [
+@@ -40,20 +40,7 @@
+         cffi_modules=[
+             "src/_cffi_src/build_openssl.py:ffi",
+         ],
+-        rust_extensions=[
+-            RustExtension(
+-                "_rust",
+-                "src/rust/Cargo.toml",
+-                py_limited_api=True,
+-                # Enable abi3 mode if we're not using PyPy.
+-                features=(
+-                    []
+-                    if platform.python_implementation() == "PyPy"
+-                    else ["pyo3/abi3-py36"]
+-                ),
+-                rust_version=">=1.41.0",
+-            )
+-        ],
++        rust_extensions=[],
+     )
+ except:  # noqa: E722
+     # Note: This is a bare exception that re-raises so that we don't interfere

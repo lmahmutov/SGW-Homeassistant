@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-httpcore
-PKG_VERSION:=0.13.3
+PKG_VERSION:=0.14.3
 PKG_RELEASE:=1
 
 PYPI_NAME:=httpcore
-PKG_HASH:=5d674b57a11275904d4fd0819ca02f960c538e4472533620f322fc7db1ea0edc
+PKG_HASH:=d10162a63265a0228d5807964bd964478cbdb5178f9a2eedfebb2faba27eef5d
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=BSD-3-Clause
@@ -29,7 +29,8 @@ define Package/python3-ha-httpcore
   URL:=https://pypi.org/project/httpcore/
   DEPENDS:= \
 	+python3-ha-h11 \
-	+python3-ha-sniffio
+	+python3-ha-sniffio \
+	+python3-ha-anyio
 endef
 
 define Package/python3-ha-httpcore/description

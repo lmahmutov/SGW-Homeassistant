@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-jinja2
-PKG_VERSION:=3.0.2
+PKG_VERSION:=3.0.3
 PKG_RELEASE:=$(AUTORELEASE)
 
 PYPI_NAME:=Jinja2
-PKG_HASH:=827a0e32839ab1600d4eb1c4c33ec5a8edfbc5cb42dafa13b81f182f97784b45
+PKG_HASH:=611bb273cd68f3b993fabdc4064fc858c5b47a973cb5aa7999ec1ba405c87cd7
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=BSD-3-Clause

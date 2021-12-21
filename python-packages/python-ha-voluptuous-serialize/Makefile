@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ha-voluptuous-serialize
-PKG_VERSION:=2.4.0
+PKG_VERSION:=2.5.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=voluptuous-serialize
-PKG_HASH:=c6ba17cb0301c18e8b955d89b85fa4aa05c05c80ab1e4873810900f757dceae4
+PKG_HASH:=5359f2e0a4f972ae03066e0777b4f0755c9226b2af099ca4fc55432efd1a447b
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0

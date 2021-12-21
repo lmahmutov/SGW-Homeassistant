@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=async-timeout
-PKG_VERSION:=3.0.1
+PKG_VERSION:=4.0.0
 PKG_RELEASE:=2
 
 PYPI_NAME:=async_timeout
 PYPI_SOURCE_NAME:=async-timeout
-PKG_HASH:=0c3c816a028d47f659d6ff5c745cb2acf1f966da1fe5c19c77a70282b25f4c5f
+PKG_HASH:=7d87a4e8adba8ededb52e579ce6bc8276985888913620c935094c2276fd83382
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0

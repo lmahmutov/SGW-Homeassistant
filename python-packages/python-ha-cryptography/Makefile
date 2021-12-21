@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-cryptography
-PKG_VERSION:=3.4.8
+PKG_VERSION:=35.0.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=cryptography
-PKG_HASH:=94cc5ed4ceaefcbe5bf38c8fba6a21fc1d365bb8fb826ea1688e3370b2e24a1c
+PKG_HASH:=9933f28f70d0517686bd7de36166dda42094eac49415459d9bdf5e7df3e0086d
 
 PKG_LICENSE:=Apache-2.0 BSD-3-Clause
 PKG_LICENSE_FILES:=LICENSE.APACHE LICENSE.BSD
@@ -25,6 +25,13 @@ HOST_PYTHON3_PACKAGE_BUILD_DEPENDS:=cffi  # cffi>=1.12
 include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
+
+define Build/Prepare
+	$(call Build/Prepare/Default)
+	# Remove rust
+	cd $(PKG_BUILD_DIR)/src/cryptography/hazmat/bindings && rm -rf _rust
+endef
+
 
 define Package/python3-ha-cryptography
   CATEGORY:=Homeassistant
