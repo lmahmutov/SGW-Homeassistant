@@ -6,7 +6,7 @@
  PyJWT==2.1.0
 -cryptography==35.0.0
 +cryptography==3.4.8
- pip<=21.2.3,>=8.0.3
+ pip<=21.2.6,>=8.0.3
  python-slugify==4.0.1
  pyyaml==6.0
 --- a/homeassistant/package_constraints.txt
@@ -28,6 +28,6 @@
      # PyJWT has loose dependency. We want the latest one.
 -    "cryptography==35.0.0",
 +    "cryptography==3.4.8",
-     "pip>=8.0.3,<=21.2.3",
+     "pip>=8.0.3,<=21.2.6",
      "python-slugify==4.0.1",
      "pyyaml==6.0",

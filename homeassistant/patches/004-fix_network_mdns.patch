@@ -1,0 +1,11 @@
+--- a/homeassistant/components/network/const.py
++++ b//homeassistant/components/network/const.py
+@@ -15,7 +15,7 @@
+ 
+ ATTR_ADAPTERS: Final = "adapters"
+ ATTR_CONFIGURED_ADAPTERS: Final = "configured_adapters"
+-DEFAULT_CONFIGURED_ADAPTERS: list[str] = []
++DEFAULT_CONFIGURED_ADAPTERS: list[str] = ["br-lan"]
+ 
+ MDNS_TARGET_IP: Final = "224.0.0.251"
+ PUBLIC_TARGET_IP: Final = "8.8.8.8"
