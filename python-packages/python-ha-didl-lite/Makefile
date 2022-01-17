@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-didl-lite
-PKG_VERSION:=1.3.1
+PKG_VERSION:=1.3.2
 PKG_RELEASE:=1
 
 PYPI_NAME:=python-didl-lite
-PKG_HASH:=094d4910baa5b014d0f1479ee6716b9c8891612ef8548dfc91f8dbe3b41f997d
+PKG_HASH:=88c0641d3140f7b05f1efd93f7c481fc62aa50d1e05e17f0e0a15bee025c4af1
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0

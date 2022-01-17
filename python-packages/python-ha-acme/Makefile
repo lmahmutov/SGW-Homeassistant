@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-acme
-PKG_VERSION:=1.18.0
+PKG_VERSION:=1.22.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=acme
-PKG_HASH:=9ae06031bbcc492d4ea20aec36bb2ead08b40ccb70d980ade8ecfe8a15d762af
+PKG_HASH:=05434e486a0e0958e197bd5eb28a07d87d930e0045bf00a190cf645d253a0dd9
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0 MIT

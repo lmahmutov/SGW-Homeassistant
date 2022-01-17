@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-josepy
-PKG_VERSION:=1.4.0
+PKG_VERSION:=1.12.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=josepy
-PKG_HASH:=c37ff4b93606e6a452b72cdb992da5e0544be12912fac01b31ddbdd61f6d5bd0
+PKG_HASH:=267004a64f08c016cd54b7aaf7c323fa3ef3679fb62f4b086cd56448d0fecb25
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0

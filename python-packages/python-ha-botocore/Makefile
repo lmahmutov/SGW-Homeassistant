@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-botocore
-PKG_VERSION:=1.19.3
+PKG_VERSION:=1.19.63
 PKG_RELEASE:=2
 
 PYPI_NAME:=botocore
-PKG_HASH:=4ea4c74d244c1b4701387fd1abe6a5e1833dc621c6d39f8888f0bfa95ddd82f5
+PKG_HASH:=d3694f6ef918def8082513e5ef309cd6cd83b612e9984e3a66e8adc98c650a92
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
