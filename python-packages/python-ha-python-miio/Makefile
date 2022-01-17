@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-python-miio
-PKG_VERSION:=0.5.8
+PKG_VERSION:=0.5.9.2
 PKG_RELEASE:=1
 
 PYPI_NAME:=python-miio
-PKG_HASH:=d7a5c46a1e6b81e9bf2fc03fce8d733eb89fad4d7954c93ae76ac52d972f8e28
+PKG_HASH:=005c1aad18459277f04d2bd20c6a1613efe6bf52940f65e758aff1081aab378a
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT

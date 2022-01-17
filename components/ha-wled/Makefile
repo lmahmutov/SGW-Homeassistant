@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ha-wled
-PKG_VERSION:=0.8.0
+PKG_VERSION:=0.10.1
 PKG_RELEASE:=1
 
 PYPI_NAME:=wled
-PKG_HASH:=93a6ff4580e1ffe461807f6c86b7c506b5965579ff2b56101935ca8eec05d02e
+PKG_HASH:=9c6a84870ca04815e265fac3aae89c296f7154dc7f0e595e8489b6635e43cfcd
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
@@ -29,7 +29,8 @@ define Package/ha-wled
   URL:=https://pypi.org/project/wled/
   DEPENDS:= +homeassistant \
 	+python3-ha-backoff \
-	+python3-ha-packaging
+	+python3-ha-packaging \
+	+python3-ha-cachetools
 endef
 
 define Package/ha-wled/description
