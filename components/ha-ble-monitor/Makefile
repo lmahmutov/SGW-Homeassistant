@@ -24,7 +24,8 @@ define Package/ha-ble-monitor
 	+python3-ha-pycryptodomex \
 	+python3-ha-janus \
 	+python3-ha-aioblescan \
-	+python3-ha-btsocket
+	+python3-ha-btsocket \
+	+python3-ha-pyric
 endef
 
 define Package/ha-ble-monitor/description

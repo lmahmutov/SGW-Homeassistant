@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-aioblescan
-PKG_VERSION:=0.2.9
+PKG_VERSION:=0.2.12
 PKG_RELEASE:=1
 
 PYPI_NAME:=aioblescan
-PKG_HASH:=8e9b5b8f3396b573cb2ce63f232f1fc42050ef64ecace0af878c49a281c79270
+PKG_HASH:=050f883d0f742f60714a2ce3873e0eef31184d73bfa2e0b1d3449ef69d18d331
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0
