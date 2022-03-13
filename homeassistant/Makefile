@@ -84,7 +84,8 @@ define Package/homeassistant
 	+python3-ha-urllib3 \
 	+python3-ha-websocket-client \
 	+python3-ha-xmltodict \
-	+python3-ha-radios
+	+python3-ha-radios \
+	+python3-ha-pycares
 endef
 
 define Package/homeassistant/description
