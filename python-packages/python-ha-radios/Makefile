@@ -28,8 +28,15 @@ define Package/python3-ha-radios
   TITLE:=Python client for the Radio Browser API.
   URL:=https://pypi.org/project/radios/
   DEPENDS:= \
-	+python3-ha-jsonschema \
-	+python3-ha-coloredlogs
+	+python3-light	\
+	+python3-ha-aiodns \
+	+python3-ha-aiohttp \
+	+python3-ha-awesomeversion \
+	+python3-ha-backoff \
+	+python3-ha-cachetools \
+	+python3-ha-pycountry \
+	+python3-ha-pydantic \
+	+python3-ha-yarl
 endef
 
 define Package/python3-ha-radios/description
