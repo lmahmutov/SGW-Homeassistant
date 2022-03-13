@@ -11,7 +11,7 @@ PKG_NAME:=python-pyric
 PKG_VERSION:=0.1.6.3
 PKG_RELEASE:=1
 
-PYPI_NAME:=pyric
+PYPI_NAME:=PyRIC
 PKG_HASH:=b539b01cafebd2406c00097f94525ea0f8ecd1dd92f7731f43eac0ef16c2ccc9
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
