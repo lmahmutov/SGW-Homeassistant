@@ -23,7 +23,8 @@ define Package/ha-ble-monitor
 	+homeassistant \
 	+python3-ha-pycryptodomex \
 	+python3-ha-janus \
-	+python3-ha-aioblescan
+	+python3-ha-aioblescan \
+	+python3-ha-btsocket
 endef
 
 define Package/ha-ble-monitor/description

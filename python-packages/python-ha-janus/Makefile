@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-janus
-PKG_VERSION:=0.6.2
+PKG_VERSION:=1.0.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=janus
-PKG_HASH:=127edc891f9e13420dd12f230d5113fa3de7f93662b81acfaf845989edf5eebf
+PKG_HASH:=df976f2cdcfb034b147a2d51edfc34ff6bfb12d4e2643d3ad0e10de058cb1612
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0

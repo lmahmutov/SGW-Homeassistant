@@ -7,12 +7,12 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=python-yeelight
-PKG_VERSION:=0.7.9
+PKG_NAME:=python-btsocket
+PKG_VERSION:=0.2.0
 PKG_RELEASE:=1
 
-PYPI_NAME:=yeelight
-PKG_HASH:=69970e72e9a0c8fbc6cf17f5ad9666a743b05df9eddc07dda500e08bd8d3c601
+PYPI_NAME:=btsocket
+PKG_HASH:=6862250b7e0973d2beea9e49d3b5ced324d80e5003a0350856879e537ba777a8
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
@@ -22,18 +22,18 @@ include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
 
-define Package/python3-ha-yeelight
+define Package/python3-ha-btsocket
   CATEGORY:=Homeassistant
   SUBMENU:=Python packages
-  TITLE:=YeeLight RGB bulbs
-  URL:=https://pypi.org/project/yeelight/
+  TITLE:=Python library for BlueZ
+  URL:=https://pypi.org/project/btsocket/
   DEPENDS:=  \
 	+python3-light
 endef
 
-define Package/python3-ha-yeelight/description
- A Python library for controlling YeeLight RGB bulbs.
+define Package/python3-ha-btsocket/description
+ Python library for BlueZ Bluetooth Management API.
 endef
 
-$(eval $(call Py3Package,python3-ha-yeelight))
-$(eval $(call BuildPackage,python3-ha-yeelight))
+$(eval $(call Py3Package,python3-ha-btsocket))
+$(eval $(call BuildPackage,python3-ha-btsocket))
