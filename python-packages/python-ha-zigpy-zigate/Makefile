@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-zigpy-zigate
-PKG_VERSION:=0.7.3
+PKG_VERSION:=0.8.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=zigpy-zigate
-PKG_HASH:=c4e2386242c7d13e9e2ffc67922eb00d4ebf8b2a25c8a6bed0d447acc1dd72f7
+PKG_HASH:=08691bb97e52dca114ace4edcbee0146f27e7c04d23a8b1b77a8450585ce2176
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT

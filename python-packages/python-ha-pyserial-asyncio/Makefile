@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-pyserial-asyncio
-PKG_VERSION:=0.5
+PKG_VERSION:=0.6
 PKG_RELEASE:=1
 
 PYPI_NAME:=pyserial-asyncio
-PKG_HASH:=1641e5433a866eeaf6464b3ab88b741e7a89dd8cd0f851b3343b15f425138d33
+PKG_HASH:=b6032923e05e9d75ec17a5af9a98429c46d2839adfaf80604d52e0faacd7a32f
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT

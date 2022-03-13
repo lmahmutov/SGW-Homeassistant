@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-pyhap
-PKG_VERSION:=4.3.0
+PKG_VERSION:=4.4.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=HAP-python
-PKG_HASH:=0c126f789afbc32a7379bb4218f748b5030cbeceeaefdde6bf89a00280bf4bf3
+PKG_HASH:=8a6dbe335de434fc96486a9dcad668a85d44cb7c95241f4f9fb68fd32c5ab484
 
 PKG_LICENSE:=Apache-2.0
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>

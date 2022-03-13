@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-pycryptodomex
-PKG_VERSION:=3.11.0
+PKG_VERSION:=3.14.1
 PKG_RELEASE:=1
 
 PYPI_NAME:=pycryptodomex
-PKG_HASH:=0398366656bb55ebdb1d1d493a7175fc48ade449283086db254ac44c7d318d6d
+PKG_HASH:=2ce76ed0081fd6ac8c74edc75b9d14eca2064173af79843c24fa62573263c1f2
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0
