@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-sqlalchemy
-PKG_VERSION:=1.4.27
+PKG_VERSION:=1.4.32
 PKG_RELEASE:=1
 
 PYPI_NAME:=SQLAlchemy
-PKG_HASH:=d768359daeb3a86644f3854c6659e4496a3e6bba2b4651ecc87ce7ad415b320c
+PKG_HASH:=6fdd2dc5931daab778c2b65b03df6ae68376e028a3098eb624d0909d999885bc
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 
