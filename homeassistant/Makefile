@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=homeassistant
-PKG_VERSION:=2022.3.4
+PKG_VERSION:=2022.4.1
 PKG_RELEASE:=1
 
 PYPI_NAME:=homeassistant
-PKG_HASH:=4265f4e4fa3244df1a7f92cb50cb6d32d6a686278fde5f1d0fb1fe9113be227b
+PKG_HASH:=abc9869d29781c893c4f254a52f873bebeaf88039f8a18230614ca0163cdf8c2
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0
@@ -51,7 +51,8 @@ define Package/homeassistant
 	+python3-ha-voluptuous-serialize \
 	+python3-ha-yaml \
 	+python3-ha-yarl \
-	+python3-ha-pyturbojpeg
+	+python3-ha-pyturbojpeg \
+	+python3-ha-securetar
 # base
   DEPENDS+= \
 	+python3-ha-aiodiscover \
@@ -68,7 +69,9 @@ define Package/homeassistant
 	+python3-ha-pyudev \
 	+python3-ha-sqlalchemy \
 	+python3-ha-zeroconf \
-	+python3-ha-scapy
+	+python3-ha-scapy \
+	+python3-ha-lru-dict \
+	+python3-ha-fnvhash
 # ext
   DEPENDS+= \
 	+libpcap \
@@ -100,6 +103,7 @@ define Build/Prepare
 	sed -i 's/"cloud",//' $(PKG_BUILD_DIR)/homeassistant/components/default_config/manifest.json
 	# Remove unwanted integrations
 	sed -i 's/    "/    # "/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "integration":/    "integration":/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "mqtt"/    "mqtt"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "zha"/    "zha"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "esphome"/    "esphome"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
@@ -108,6 +112,12 @@ define Build/Prepare
 	sed -i 's/    # "xiaomi_miio"/    "xiaomi_miio"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "yeelight"/    "yeelight"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "yeelightsunflower"/    "yeelightsunflower"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "helper":/    "helper":/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "group",/    "group",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "integration",/    "integration",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "min_max",/    "min_max",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "threshold",/    "threshold",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "switch_as_x",/    "switch_as_x",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 
 	# disabling all zeroconf services
 	sed -i 's/^    "_/    "_disabled_/' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py

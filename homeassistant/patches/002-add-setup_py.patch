@@ -1,11 +1,11 @@
---- a/setup.py
+--- /dev/null
 +++ b/setup.py
 @@ -0,0 +1,14 @@
 +from setuptools import setup, find_packages
 +
 +setup(
 +    name="Home Assistant",
-+    version="2022.3.4",
++    version="2022.4.1",
 +    description="Home Assistant",
 +    url="https://www.home-assistant.io/",
 +    author="The Home Assistant Authors",
