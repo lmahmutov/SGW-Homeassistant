@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-async-upnp-client
-PKG_VERSION:=0.23.5
+PKG_VERSION:=0.27.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=async_upnp_client
-PKG_HASH:=31f251c56449709f750baabbc160fefa254a2bf920940fc9c5e6d4809b3ba5e9
+PKG_HASH:=0b596802fe5c39f24a2ef77b1362bac2daaeae1420aa16a3f8ee4759713cefe8
 
 PKG_LICENSE:=Apache-2.0
 PKG_LICENSE_FILES:=LICENSE
