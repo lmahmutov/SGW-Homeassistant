@@ -8,10 +8,10 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python3-home-assistant-frontend
-PKG_VERSION:=20220203.1
+PKG_VERSION:=20220405.0
 PKG_RELEASE:=1
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/pypi/home_assistant_frontend-20220301.1
+PKG_BUILD_DIR:=$(BUILD_DIR)/pypi/home_assistant_frontend-20220405.0
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
@@ -32,7 +32,8 @@ define Package/python3-home-assistant-frontend
 endef
 
 define Build/Prepare
-	wheel unpack ./whl/home_assistant_frontend-20220301.1-py3-none-any.whl -d $(BUILD_DIR)/pypi/
+#	wheel unpack ./whl/home_assistant_frontend-20220405.0-py3-none-any.whl -d $(BUILD_DIR)/pypi/
+	unzip ./whl/home_assistant_frontend-20220405.0-py3-none-any.whl -d $(PKG_BUILD_DIR)/
 	$(CP) ./files/* $(PKG_BUILD_DIR)/
 	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/frontend_es5 -name '*.js' -delete
 	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/frontend_es5 -name '*.map'  -delete
