@@ -8,11 +8,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-gtts
-PKG_VERSION:=2.2.3
+PKG_VERSION:=2.2.4
 PKG_RELEASE:=1
 
 PYPI_NAME:=gTTS
-PKG_HASH:=88cfaa112471867009a0450a696e5bc69cf1671fa0fa683fe17d0650023c863c
+PKG_SOURCE:=$(PYPI_NAME)-$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL:=https://codeload.github.com/pndurette/gTTS/tar.gz/v$(PKG_VERSION)?
+PKG_HASH:=e0b688ff777928afe280c3cf4d36bc7b794e93e86851b680d54ba2fb68e88456
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0
