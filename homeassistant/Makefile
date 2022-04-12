@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=homeassistant
-PKG_VERSION:=2022.4.1
+PKG_VERSION:=2022.4.2
 PKG_RELEASE:=1
 
 PYPI_NAME:=homeassistant
-PKG_HASH:=abc9869d29781c893c4f254a52f873bebeaf88039f8a18230614ca0163cdf8c2
+PKG_HASH:=d744af61d5e110cdfc9926a5cb914e3737fef2c89a3444b8c264f12f1303459c
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0
@@ -88,7 +88,8 @@ define Package/homeassistant
 	+python3-ha-websocket-client \
 	+python3-ha-xmltodict \
 	+python3-ha-radios \
-	+python3-ha-pycares
+	+python3-ha-pycares \
+	+python3-ha-hatasmota
 endef
 
 define Package/homeassistant/description
@@ -109,6 +110,7 @@ define Build/Prepare
 	sed -i 's/    # "esphome"/    "esphome"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "wled"/    "wled"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "homekit"/    "homekit"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "tasmota"/    "tasmota"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "xiaomi_miio"/    "xiaomi_miio"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "yeelight"/    "yeelight"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "yeelightsunflower"/    "yeelightsunflower"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
