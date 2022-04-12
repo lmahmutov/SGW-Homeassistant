@@ -8,5 +8,9 @@ start_service()
     procd_set_param stdout 1
     procd_set_param stderr 1
     procd_set_param respawn ${respawn_threshold:-3600} ${respawn_timeout:-5} ${respawn_retry:-5}
+    # use HUP to reload
+    procd_set_param reload_signal HUP
+    # terminate using signals
+    procd_set_param term_timeout 60
     procd_close_instance
 }
