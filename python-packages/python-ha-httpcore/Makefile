@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-httpcore
-PKG_VERSION:=0.14.3
+PKG_VERSION:=0.14.7
 PKG_RELEASE:=1
 
 PYPI_NAME:=httpcore
-PKG_HASH:=d10162a63265a0228d5807964bd964478cbdb5178f9a2eedfebb2faba27eef5d
+PKG_HASH:=7503ec1c0f559066e7e39bc4003fd2ce023d01cf51793e3c173b864eb456ead1
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=BSD-3-Clause
