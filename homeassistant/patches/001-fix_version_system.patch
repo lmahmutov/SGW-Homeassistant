@@ -1,6 +1,6 @@
 --- a/homeassistant/helpers/system_info.py
 +++ b/homeassistant/helpers/system_info.py
-@@ -16,7 +16,7 @@
+@@ -16,7 +16,7 @@ from homeassistant.util.package import i
  async def async_get_system_info(hass: HomeAssistant) -> dict[str, Any]:
      """Return info about the system."""
      info_object = {

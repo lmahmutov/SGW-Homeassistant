@@ -1,11 +1,11 @@
 --- a/homeassistant/components/network/const.py
-+++ b//homeassistant/components/network/const.py
-@@ -15,7 +15,7 @@
++++ b/homeassistant/components/network/const.py
+@@ -15,7 +15,7 @@ DATA_NETWORK: Final = "network"
  
  ATTR_ADAPTERS: Final = "adapters"
  ATTR_CONFIGURED_ADAPTERS: Final = "configured_adapters"
 -DEFAULT_CONFIGURED_ADAPTERS: list[str] = []
 +DEFAULT_CONFIGURED_ADAPTERS: list[str] = ["br-lan"]
  
+ LOOPBACK_TARGET_IP: Final = "127.0.0.1"
  MDNS_TARGET_IP: Final = "224.0.0.251"
- PUBLIC_TARGET_IP: Final = "8.8.8.8"
