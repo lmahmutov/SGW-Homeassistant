@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-yeelight
-PKG_VERSION:=0.7.9
+PKG_VERSION:=0.7.10
 PKG_RELEASE:=1
 
 PYPI_NAME:=yeelight
-PKG_HASH:=69970e72e9a0c8fbc6cf17f5ad9666a743b05df9eddc07dda500e08bd8d3c601
+PKG_HASH:=0b0e1b2be58b3524a31f51d28610d2a6e459b74ea6770bd7cfd1c8a4622c64a3
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
