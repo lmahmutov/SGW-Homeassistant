@@ -11,7 +11,11 @@ PKG_NAME:=python3-home-assistant-frontend
 PKG_VERSION:=20220405.0
 PKG_RELEASE:=1
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/pypi/home_assistant_frontend-20220405.0
+PYPI_NAME:=home_assistant_frontend
+PKG_SOURCE:=$(PYPI_NAME)-$(PKG_VERSION)-py3-none-any.whl
+PKG_SOURCE_URL:=https://github.com/home-assistant/frontend/releases/download/$(PKG_VERSION)/
+PKG_HASH:=334db8b892558554a81a125373b77c34a22dc34b0038616e0ac64d51efffbc18
+UNPACK_CMD=ar -p "$(DL_DIR)/$(PKG_SOURCE)" | unzip -q "$(DL_DIR)/$(PKG_SOURCE)" -d $(1)
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
@@ -32,8 +36,7 @@ define Package/python3-home-assistant-frontend
 endef
 
 define Build/Prepare
-#	wheel unpack ./whl/home_assistant_frontend-20220405.0-py3-none-any.whl -d $(BUILD_DIR)/pypi/
-	unzip ./whl/home_assistant_frontend-20220405.0-py3-none-any.whl -d $(PKG_BUILD_DIR)/
+	$(Build/Prepare/Default)
 	$(CP) ./files/* $(PKG_BUILD_DIR)/
 	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/frontend_es5 -name '*.js' -delete
 	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/frontend_es5 -name '*.map'  -delete
