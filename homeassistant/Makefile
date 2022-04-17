@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=homeassistant
-PKG_VERSION:=2022.4.2
+PKG_VERSION:=2022.4.5
 PKG_RELEASE:=1
 
 PYPI_NAME:=homeassistant
-PKG_HASH:=d744af61d5e110cdfc9926a5cb914e3737fef2c89a3444b8c264f12f1303459c
+PKG_HASH:=76c2d52785fa212e5f91ca79356e2d628ade1332a8397d24183c969a750affdb
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0
@@ -27,6 +27,7 @@ define Package/homeassistant
   CATEGORY:=Homeassistant
   TITLE:=Open source home automation
   URL:=https://github.com/home-assistant/core
+  USERID:=homeassistant:homeassistant
   DEPENDS:= \
 	+python3-dev \
 	+python3-pip

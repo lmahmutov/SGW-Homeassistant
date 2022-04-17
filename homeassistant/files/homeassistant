@@ -3,11 +3,15 @@ START=99
 USE_PROCD=1
 start_service()
 {
+    chown -R homeassistant:homeassistant /etc/homeassistant
+    mkdir -p /var/log/ha
+    chown homeassistant:homeassistant /var/log/ha
     procd_open_instance
-    procd_set_param command hass --config /etc/homeassistant --log-file /var/log/home-assistant.log --log-rotate-days 3
+    procd_set_param user homeassistant
+    procd_set_param command hass --config /etc/homeassistant --log-file /var/log/ha/home-assistant.log --log-rotate-days 3
     procd_set_param stdout 1
     procd_set_param stderr 1
-    procd_set_param respawn ${respawn_threshold:-3600} ${respawn_timeout:-5} ${respawn_retry:-5}
+    procd_set_param respawn ${respawn_threshold:-70} ${respawn_timeout:-5} ${respawn_retry:-5}
     # use HUP to reload
     procd_set_param reload_signal HUP
     # terminate using signals
