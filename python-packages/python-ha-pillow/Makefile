@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-pillow
-PKG_VERSION:=9.0.1
+PKG_VERSION:=9.1.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=Pillow
-PKG_HASH:=6c8bc8238a7dfdaf7a75f5ec5a663f4173f8c367e5a39f87e720495e1eed75fa
+PKG_HASH:=f401ed2bbb155e1ade150ccc63db1a4f6c1909d3d378f7d1235a44e90d75fb97
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=HPND

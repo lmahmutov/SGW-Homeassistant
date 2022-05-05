@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=homeassistant
-PKG_VERSION:=2022.4.5
+PKG_VERSION:=2022.5.3
 PKG_RELEASE:=1
 
 PYPI_NAME:=homeassistant
-PKG_HASH:=76c2d52785fa212e5f91ca79356e2d628ade1332a8397d24183c969a750affdb
+PKG_HASH:=d759f9acf87d2f6b0b8598c48700b5c5a6a72ad40cd8248f431266fe9d92e6f2
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0
@@ -131,6 +131,12 @@ define Build/Prepare
 	sed -i 's/_disabled_ipp./_ipp./' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
 	sed -i 's/_disabled_printer./_printer./' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
 	sed -i 's/_disabled_miio./_miio./' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
+	#update version
+	sed -i 's/version=.*/version="$(PKG_VERSION)",/' $(PKG_BUILD_DIR)/setup.py
+	#downgrade python cryptograpy untill RUST is available
+	sed -i 's/cryptography==.*/cryptography==3.4.8/' $(PKG_BUILD_DIR)/homeassistant.egg-info/requires.txt
+	sed -i 's/cryptography==.*/cryptography==3.4.8/' $(PKG_BUILD_DIR)/homeassistant/package_constraints.txt
+	sed -i 's/cryptography==.*/cryptography==3.4.8/' $(PKG_BUILD_DIR)/setup.cfg
 endef
 
 define Py3Package/homeassistant/install

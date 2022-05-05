@@ -8,13 +8,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python3-home-assistant-frontend
-PKG_VERSION:=20220405.0
+PKG_VERSION:=20220504.1
 PKG_RELEASE:=1
 
 PYPI_NAME:=home_assistant_frontend
 PKG_SOURCE:=$(PYPI_NAME)-$(PKG_VERSION)-py3-none-any.whl
 PKG_SOURCE_URL:=https://github.com/home-assistant/frontend/releases/download/$(PKG_VERSION)/
-PKG_HASH:=334db8b892558554a81a125373b77c34a22dc34b0038616e0ac64d51efffbc18
+PKG_HASH:=114f48ff4f8499c36bede62add9e49e7f2a25aef90cf4fb09fb519309141c69d
 UNPACK_CMD=ar -p "$(DL_DIR)/$(PKG_SOURCE)" | unzip -q "$(DL_DIR)/$(PKG_SOURCE)" -d $(1)
 
 PKG_LICENSE:=MIT
@@ -48,7 +48,9 @@ define Build/Prepare
 	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/static/mdi -name '*.json' -maxdepth 1  -delete
 	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/static/polyfills -name '*.js' -maxdepth 1 -delete
 	$(FIND) $(PKG_BUILD_DIR)/hass_frontend/static/polyfills -name '*.map' -maxdepth 1 -delete
-
+	#update version
+	$(SED) 's/Version: .*/Version: $(PKG_VERSION)/' $(PKG_BUILD_DIR)/PKG-INFO
+	$(SED) 's/version = .*/version = $(PKG_VERSION)/' $(PKG_BUILD_DIR)/setup.cfg
 	# shopping list and calendar missing gzipped
 	gzip $(PKG_BUILD_DIR)/hass_frontend/static/translations/shopping_list/*
 
