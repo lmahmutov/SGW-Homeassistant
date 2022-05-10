@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python3-ha-hatasmota
-PKG_VERSION:=0.4.0
+PKG_VERSION:=0.4.1
 PKG_RELEASE:=1
 
 PYPI_NAME:=HATasmota
-PKG_HASH:=0c4a6da260e7adbfe56fd392005f7539590b740c3cc9a0624d1e1b5f9648578a
+PKG_HASH:=3eb17d33c7770142a6ba2680bf3a36090cb55e746b49b68dfaa1e2825f6e4efc
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0 MIT
