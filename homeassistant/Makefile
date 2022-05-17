@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=homeassistant
-PKG_VERSION:=2022.5.3
+PKG_VERSION:=2022.5.4
 PKG_RELEASE:=1
 
 PYPI_NAME:=homeassistant
-PKG_HASH:=d759f9acf87d2f6b0b8598c48700b5c5a6a72ad40cd8248f431266fe9d92e6f2
+PKG_HASH:=7129dde35f6e2d43315a407c55ae671fcc016f286059be4b80e87ffb2aa9d479
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0
@@ -116,11 +116,14 @@ define Build/Prepare
 	sed -i 's/    # "yeelight"/    "yeelight"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "yeelightsunflower"/    "yeelightsunflower"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "helper":/    "helper":/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "derivative",/    "derivative",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "group",/    "group",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "integration",/    "integration",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "min_max",/    "min_max",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
-	sed -i 's/    # "threshold",/    "threshold",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "switch_as_x",/    "switch_as_x",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "threshold",/    "threshold",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "tod",/    "tod",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "utility_meter",/    "utility_meter",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 
 	# disabling all zeroconf services
 	sed -i 's/^    "_/    "_disabled_/' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
