@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-zigpy-zigate
-PKG_VERSION:=0.8.0
+PKG_VERSION:=0.7.4
 PKG_RELEASE:=1
 
 PYPI_NAME:=zigpy-zigate
-PKG_HASH:=08691bb97e52dca114ace4edcbee0146f27e7c04d23a8b1b77a8450585ce2176
+PKG_HASH:=62779ad6f75abdc1eae65c057917fe50d11e5c70814e9d2758ef720ed047dbf5
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
@@ -28,8 +28,7 @@ define Package/python3-ha-zigpy-zigate
   TITLE:=ZiGate radios for zigpy.
   URL:=https://pypi.org/project/zigpy-zigate/
   DEPENDS:= +python3-light \
-	+python3-ha-pyusb \
-	+python3-ha-rpi-gpio
+	+python3-ha-pyusb
 endef
 
 define Package/python3-ha-zigpy-zigate/description

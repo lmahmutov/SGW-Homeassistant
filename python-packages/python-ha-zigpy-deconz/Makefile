@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-zigpy-deconz
-PKG_VERSION:=0.15.0
+PKG_VERSION:=0.16.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=zigpy-deconz
-PKG_HASH:=91f9c33597322337907fd80fe4acb7aeb4ae07da710a739884f28a0edc8d085e
+PKG_HASH:=bea358aa50dd5337b3cdee85c7aa0506bad5c42c7e71e9f140730dcee81e4971
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
