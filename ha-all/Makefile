@@ -25,7 +25,9 @@ define Package/ha-all
 	+ha-ble-monitor \
 	+ha-miio \
 	+ha-yeelight \
-	+ha-yandexstation
+	+ha-yandexstation \
+	+ha-webrtc \
+	+ha-xiaomigateway3
 endef
 
 define Package/ha-all/description
