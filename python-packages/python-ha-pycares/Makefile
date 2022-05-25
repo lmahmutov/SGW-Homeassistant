@@ -27,7 +27,7 @@ define Package/python3-ha-pycares
   SUBMENU:=Python packages
   TITLE:=Python interface for c-ares.
   URL:=https://pypi.org/project/pycares/
-  DEPENDS:= \
+  DEPENDS:= +python3-ha-cffi \
 	+python3-light
 endef
 
