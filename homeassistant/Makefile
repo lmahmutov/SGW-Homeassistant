@@ -90,7 +90,8 @@ define Package/homeassistant
 	+python3-ha-xmltodict \
 	+python3-ha-radios \
 	+python3-ha-pycares \
-	+python3-ha-hatasmota
+	+python3-ha-hatasmota \
+	+python3-ha-telegram
 endef
 
 define Package/homeassistant/description
@@ -111,6 +112,7 @@ define Build/Prepare
 	sed -i 's/    # "esphome"/    "esphome"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "wled"/    "wled"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "homekit"/    "homekit"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "homekit_controller"/    "homekit_controller"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "tasmota"/    "tasmota"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "xiaomi_miio"/    "xiaomi_miio"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "yeelight"/    "yeelight"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
