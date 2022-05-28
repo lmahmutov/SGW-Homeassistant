@@ -27,7 +27,8 @@ define Package/ha-all
 	+ha-yeelight \
 	+ha-yandexstation \
 	+ha-webrtc \
-	+ha-xiaomigateway3
+	+ha-xiaomigateway3 \
+	+ha-yaha
 endef
 
 define Package/ha-all/description
