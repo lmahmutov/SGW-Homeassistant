@@ -1,0 +1,17 @@
+--- a/setup.cfg	2022-06-04 06:29:35.344871082 +0000
++++ b/setup.cfg	2022-06-04 06:29:53.633476674 +0000
+@@ -28,6 +28,14 @@
+ 	voluptuous-serialize==2.5.0
+ 	yarl==1.7.2
+ 
++[options.packages.find]
++include =
++	homeassistant*
++
++[options.entry_points]
++console_scripts =
++	hass = homeassistant.__main__:main
++
+ [flake8]
+ exclude = .venv,.git,.tox,docs,venv,bin,lib,deps,build
+ max-complexity = 25
