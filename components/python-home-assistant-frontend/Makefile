@@ -8,13 +8,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python3-home-assistant-frontend
-PKG_VERSION:=20220504.1
+PKG_VERSION:=20220601.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=home_assistant_frontend
 PKG_SOURCE:=$(PYPI_NAME)-$(PKG_VERSION)-py3-none-any.whl
 PKG_SOURCE_URL:=https://github.com/home-assistant/frontend/releases/download/$(PKG_VERSION)/
-PKG_HASH:=114f48ff4f8499c36bede62add9e49e7f2a25aef90cf4fb09fb519309141c69d
+PKG_HASH:=58644a26ae36f5f23165027354adb116a5d436b2186c28ebdb34d2ce90656a42
 UNPACK_CMD=ar -p "$(DL_DIR)/$(PKG_SOURCE)" | unzip -q "$(DL_DIR)/$(PKG_SOURCE)" -d $(1)
 
 PKG_LICENSE:=MIT

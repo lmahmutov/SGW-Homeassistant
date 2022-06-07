@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=homeassistant
-PKG_VERSION:=2022.5.4
+PKG_VERSION:=2022.6.2
 PKG_RELEASE:=1
 
 PYPI_NAME:=homeassistant
-PKG_HASH:=7129dde35f6e2d43315a407c55ae671fcc016f286059be4b80e87ffb2aa9d479
+PKG_HASH:=c13bedd18e38266519be110bb45e51f5038157bca9b51dedc712cde32e2aaead
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=Apache-2.0
@@ -125,7 +125,7 @@ define Build/Prepare
 	sed -i 's/    # "switch_as_x",/    "switch_as_x",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "threshold",/    "threshold",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 	sed -i 's/    # "tod",/    "tod",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
-	sed -i 's/    # "utility_meter",/    "utility_meter",/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
+	sed -i 's/    # "utility_meter"/    "utility_meter"/' $(PKG_BUILD_DIR)/homeassistant/generated/config_flows.py
 
 	# disabling all zeroconf services
 	sed -i 's/^    "_/    "_disabled_/' $(PKG_BUILD_DIR)/homeassistant/generated/zeroconf.py
@@ -153,7 +153,6 @@ define Py3Package/homeassistant/install
 
 	$(INSTALL_DIR) $(1)/etc/homeassistant
 	$(INSTALL_BIN) ./files/installed $(1)/etc/homeassistant
-
 endef
 
 define Package/homeassistant/postrm
