@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-aiohomekit
-PKG_VERSION:=0.6.2
+PKG_VERSION:=0.7.17
 PKG_RELEASE:=1
 
 PYPI_NAME:=aiohomekit
-PKG_HASH:=1ba9356f44c7f13b0bedbcd6c49fa8c2e5df3936b1a5442cd87b59b8fdefb2f0
+PKG_HASH:=7bb0be4af5a2f791b3fbc347913a067aa4e0da992da0679d845239b91a3b6fbd
 
 PKG_LICENSE:=Apache-2.0
 PKG_LICENSE_FILES:=LICENSE

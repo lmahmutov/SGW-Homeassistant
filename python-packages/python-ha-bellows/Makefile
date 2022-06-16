@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-ha-bellows
-PKG_VERSION:=0.29.0
+PKG_VERSION:=0.30.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=bellows
-PKG_HASH:=128cdadd73343eecb686bcafbc7ff2f66c395089ed51d223e00f0134dd34ef91
+PKG_HASH:=8dafc8517f1f10e95f3724a115d806fa4c3df7d0a48dccd366715bd5eb68e924
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
