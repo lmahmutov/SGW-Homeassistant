@@ -33,6 +33,7 @@ define Package/python3-ha-cryptography
   URL:=https://github.com/pyca/cryptography
   DEPENDS:= \
       +libopenssl \
+      +python3-setuptools \
       +python3-light \
       +python3-email \
       +python3-openssl \
